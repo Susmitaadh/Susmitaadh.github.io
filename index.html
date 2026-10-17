@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Susmita Adhikari – Junior Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5f7;--surface:#fff;--ink:#12202b;--muted:#566877;--accent:#0b6e6e;--accent-ink:#fff;--line:#d5dee4;--chip:#e3ecf0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f171d;--surface:#16212a;--ink:#e6eef2;--muted:#93a5b2;--accent:#4fc3c3;--accent-ink:#0f171d;--line:#26343e;--chip:#1e2d37;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f171d;--surface:#16212a;--ink:#e6eef2;--muted:#93a5b2;--accent:#4fc3c3;--accent-ink:#0f171d;--line:#26343e;--chip:#1e2d37;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,"Segoe UI",sans-serif;line-height:1.1;margin:0}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+header.hero{padding:72px 0 48px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(2.8rem,9vw,5.2rem);font-weight:800;letter-spacing:-.03em}
+.role{font-size:1.25rem;margin:14px 0 0;font-weight:600}
+.intro{max-width:60ch;color:var(--muted);margin:18px 0 28px}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+h2{font-size:1.9rem;font-weight:700;margin-bottom:26px}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:18px}
+.project h3{font-size:1.4rem;font-weight:700}
+.top{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;justify-content:space-between;margin-bottom:8px}
+.status{font-size:.9rem;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:2px 12px}
+.project p{margin:8px 0;max-width:68ch}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:14px 0}
+.tags li{background:var(--chip);border-radius:8px;padding:3px 11px;font-size:.92rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.skills h3{font-size:1.05rem;margin-bottom:10px}
+.skills ul{list-style:none;padding:0;margin:0}
+.skills li{padding:3px 0}
+.job h3{font-size:1.3rem}
+.job .when{color:var(--muted);margin:4px 0 14px}
+.job ul{padding-left:20px;max-width:70ch;margin:0}
+.job li{margin-bottom:7px}
+.edu h3{font-size:1.25rem}
+.edu p{margin:6px 0;color:var(--muted)}
+footer{padding:44px 0 56px;color:var(--muted)}
+footer a{font-weight:600}
+@media (max-width:520px){header.hero{padding-top:48px}.project{padding:18px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<h1>Susmita Adhikari</h1>
+<p class="role">Junior Developer · Python, JavaScript and Laravel</p>
+<p class="intro">I’m an electronics and communication engineer who writes backend code. I’ve built a Laravel web app and APIs during a three-month internship, and a Python scraper that stores stock data in PostgreSQL. I’m looking for a junior role where I can learn from a senior team and ship tested, documented work.</p>
+<div class="links">
+<a class="btn primary" href="mailto:susmita4jun@gmail.com">Email me</a>
+<a class="btn ghost" href="https://github.com/Susmitaadh">View my GitHub</a>
+</div>
+</div></header>
+
+<main class="wrap">
+<section id="projects">
+<h2>Projects</h2>
+
+<article class="project">
+<div class="top"><h3>NEPSE Stock Price Web Scraper</h3><span class="status">Working</span></div>
+<p>Collects daily stock prices from the Nepal Stock Exchange via ShareSansar, cleans the table data, and stores it in PostgreSQL. It also checks that the insert succeeded. The README covers setup, features and planned improvements.</p>
+<ul class="tags"><li>Python</li><li>Requests</li><li>BeautifulSoup</li><li>SQLAlchemy</li><li>PostgreSQL</li></ul>
+<a href="https://github.com/Susmitaadh/Python">See the code on GitHub</a>
+</article>
+
+<article class="project">
+<div class="top"><h3>Laravel web app and API (internship work)</h3><span class="status">Internship project</span></div>
+<p>Built at Midas Health Services. The web app has registration, login, password reset, profile edit and delete, a purchases module with full CRUD, and an admin-only area for users and purchases. A separate API covers departments, doctors and users, with Sanctum token authentication.</p>
+<p>I planned a patient and doctor module, but my internship ended before I could build it.</p>
+<ul class="tags"><li>PHP</li><li>Laravel</li><li>SQL</li><li>Sanctum</li><li>Postman</li></ul>
+<a href="https://github.com/Susmitaadh/Laravel-Internship-Project">See the code on GitHub</a>
+</article>
+
+<article class="project">
+<div class="top"><h3>E-commerce app</h3><span class="status">In progress</span></div>
+<p>An online store built with the MERN stack and TypeScript. It’s unfinished, and I’m still working on it. The repository has a steady commit history so you can follow how it has grown.</p>
+<ul class="tags"><li>TypeScript</li><li>Node.js</li><li>MERN stack</li></ul>
+<a href="https://github.com/Susmitaadh/project_mern">See the code on GitHub</a>
+</article>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="job">
+<h3>Laravel Intern, Midas Health Services Pvt Ltd</h3>
+<p class="when">November 2025 to February 2026</p>
+<ul>
+<li>Built a Laravel web application with registration, login, logout, password reset, and profile edit and delete.</li>
+<li>Added role-based access with custom admin middleware and protected routes.</li>
+<li>Developed a purchases module with full CRUD and an admin view of users and purchases.</li>
+<li>Created REST APIs for departments, doctors and users, secured with Laravel Sanctum.</li>
+<li>Designed SQL tables, sent email with Laravel Mail, and tested every endpoint in Postman.</li>
+</ul>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Main language</h3><ul><li>Python</li></ul></div>
+<div><h3>Also use</h3><ul><li>JavaScript</li><li>PHP (Laravel)</li><li>C++</li></ul></div>
+<div><h3>Databases</h3><ul><li>SQL</li><li>PostgreSQL</li></ul></div>
+<div><h3>Tools</h3><ul><li>Git and GitHub</li><li>VS Code</li><li>Postman</li></ul></div>
+</div>
+</section>
+
+<section id="education" class="edu">
+<h2>Education</h2>
+<h3>Bachelor of Engineering in Electronics and Communication</h3>
+<p>Cosmos College of Management and Technology, 2025</p>
+</section>
+</main>
+
+<footer><div class="wrap">
+<p>Get in touch: <a href="mailto:susmita4jun@gmail.com">susmita4jun@gmail.com</a> or <a href="https://github.com/Susmitaadh">github.com/Susmitaadh</a></p>
+</div></footer>
+</body>
+</html>
